@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="intro-nav">
+        <div class="logo-nav">
+          <div>
+            <img src="./images/logo.svg" alt="logo" class="logo" />
+          </div>
+          <div class="intro-a-taps">
+            <span class="intro-feature">
+              <a href="#" class="dropdownFeature">Features</a
+              ><img
+                src="./images/icon-arrow-down.svg"
+                alt="icon-arrow-down"
+                class="arrow feature"
+              />
+              <div class="dropdown-feature">
+                <span>
+                  <div class="feature-a-taps">
+                  <img
+                    src="./images/icon-todo.svg"
+                    alt="icon-todo"
+                    class="intro-dropdown-logo"
+                  /><small> Todo List</small></span
+                ></div>
+                <span>
+                  <div class="feature-a-taps">
+                  <img
+                    src="./images/icon-calendar.svg"
+                    alt="calender-logo"
+                    class="intro-dropdown-logo"
+                  /><small> Calender</small></span
+                ></div>
+                <span>
+                  <div class="feature-a-taps">
+                  <img
+                    src="./images/icon-reminders.svg"
+                    alt="icon-reminders"
+                    class="intro-dropdown-logo"
+                  /><small> Reminders</small></span
+                ></div>
+                <span>
+                  <div class="feature-a-taps">
+                  <img
+                    src="./images/icon-planning.svg"
+                    alt="icon-planning"
+                    class="intro-dropdown-logo"
+                  /> <small> Planning</small></span
+                ></div>
+              </div>
+            </span>
+            <span class="intro-company">
+              <a href="#">Company</a
+              ><img
+                src="./images/icon-arrow-down.svg"
+                alt="icon-arrow-down"
+                class="arrow company"
+              />
+              <div class="dropdown-company">
+                <span>
+                  <small>History</small>
+                </span>
+                <span>
+                  <small>Our Team</small>
+                </span>
+                <span>
+                  <small>Blog</small>
+                </span>
+              </div>
+            </span>
+            <a href="#">Careers</a>
+            <a href="#">About</a>
+          </div>
+        </div>
+        <img
+            src="./images/icon-menu.svg"
+            alt="icon-menu"
+            class="intro-menu"
+          />
+        <div class="intro-a-taps">
+          <a href="#">Login </a>
+          <button class="intro-btn register">Register</button>
+        </div>
+        <div class="intro-overlay ">
+           <div class="overlay"></div>
+          <div class="mobile-nav">
+            <img  
+              src="./images/icon-close-menu.svg"
+              alt="icon-close-menu"
+              class="intro-close"
+            />
+          </div>
+          <div class="intro-moblie-nav">
+            <div class="intro-mobile-taps">
+              <span class="intro-feature">
+                <div>
+                <a href="#">Features</a
+                ><img
+                  src="./images/icon-arrow-down.svg"
+                  alt="icon-arrow-down"
+                  class="arrow feature"
+                /></div>
+                <div class="mobile-dropdown-feature">
+                  <div class="dropdown-content">
+                  <span>
+                    <div class="feature-a-taps">
+                    <img
+                      src="./images/icon-todo.svg"
+                      alt="icon-todo"
+                      class="intro-dropdown-logo"
+                    /><small>Todo List</small></span
+                  ></div>
+                  <span>
+                    <div class="feature-a-taps">
+                    <img
+                      src="./images/icon-calendar.svg"
+                      alt="calender-logo"
+                      class="intro-dropdown-logo"
+                    /><small>Calender</small></span
+                  ></div>
+                  <span>
+                    <div class="feature-a-taps">
+                    <img
+                      src="./images/icon-reminders.svg"
+                      alt="icon-reminders"
+                      class="intro-dropdown-logo"
+                    /><small>Reminders</small></span
+                  ></div>
+                  <span>
+                    <div class="feature-a-taps">
+                    <img
+                      src="/images/icon-planning.svg"
+                      alt="icon-planning"
+                      class="intro-dropdown-logo"
+                    /><small>Planning</small></span
+                  ></div>
+                 </div>
+                </div>
+              </span>
+              <span class="intro-company">
+                <div>
+                <a href="#">Company</a
+                ><img
+                  src="./images/icon-arrow-down.svg"
+                  alt="icon-arrow-down"
+                  class="arrow company"
+                /></div>
+                <div class="mobile-dropdown-company">
+                <div class="dropdown-content-company">
+                  <span class="company-a-taps">
+                    <small>History</small>
+                  </span>
+                  <span class="company-a-taps">
+                    <small>Our Team</small>
+                  </span>
+                  <span class="company-a-taps">
+                    <small>Blog</small>
+                  </span>
+                </div>
+              </div>
+              </span>
+              <a href="#">Careers</a>
+              <a href="#">About</a>
+              <div class="intro-reg-btn">
+              <a href="#">Login </a>
+              <button class="intro-btn register">Register</button>
+            </div>
+            </div>
+          </div> 
+          </div>
+        </div>
+      </div>
+      <div class="intro-container">
+        <div class="intro-content">
+          <h1 class="intro-headline">Make remote work</h1>
+          <p class="intro-discription">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button class="intro-btn learn">Learn more</button>
+          <div class="intro-icon">
+            <div>
+              <img
+                class="icon"
+                src="./images/client-databiz.svg"
+                alt="client-databiz"
+              />
+            </div>
+            <div>
+              <img
+                class="icon"
+                src="./images/client-audiophile.svg"
+                alt="client-audiophile"
+              />
+            </div>
+            <div>
+              <img
+                class="icon"
+                src="./images/client-meet.svg"
+                alt="client-meet"
+              />
+            </div>
+            <div>
+              <img
+                class="icon"
+                src="./images/client-maker.svg"
+                alt="client-maker"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="intro-hero">
+          <img
+            src="./images/image-hero-desktop.png"
+            alt="image-hero"
+            class="hero"
+          />
+          <img
+            src="./images/image-hero-mobile.png"
+            alt="image-hero"
+            class="hero-mobile"
+          />
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://www.frontendmentor.io/home">kuro</a>.
+      </div>
+    </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

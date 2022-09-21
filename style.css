@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  height: 100vh;
+  overflow-x: hidden;
+  transition: all 900ms;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.intro-nav {
+  justify-content: space-between;
+  display: flex;
+  padding: 2em;
+}
+
+.logo-nav {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1em;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.dropdown-feature {
+  position: absolute;
+  opacity: 0;
+  background-color: #fff;
+  padding: 1.5em;
+  border-radius: 10px;
+  gap: 10px;
+  translate: -25% 10%;
+  color: hsl(0, 0%, 41%);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+.feature-a-taps {
+  padding: 5px;
+}
+
+.intro-dropdown-logo {
+  margin-right: 15px;
+}
+
+.dropdown-company {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  translate: 130% 15%;
+  padding: 1.5em;
+  gap: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  color: hsl(0, 0%, 41%);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+a {
+  text-decoration: none;
+  margin-left: 2.5em;
+  font-size: 13px;
+  color: hsl(0, 0%, 41%);
+}
+
+a:hover {
+  color: hsl(0, 0%, 8%);
+}
+
+.intro-btn {
+  margin-left: 2.5em;
+  border-radius: 1em;
+  padding: 1em 1.5em;
+  outline: none;
+  border: 1.5px solid hsl(0, 0%, 41%);
+  color: hsl(0, 0%, 41%);
+  background-color: #fff;
+}
+
+.intro-btn:hover {
+  border: 1.5px solid hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 8%);
+}
+
+.feature {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.company {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.intro-container {
+  max-width: 1200px;
+  gap: 7em;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.intro-content {
+  padding-top: 6em;
+  width: 40%;
+  padding-left: 2em;
+}
+
+.intro-headline {
+  font-size: 3.9em;
+  padding-top: 1em;
+}
+
+.intro-discription {
+  font-size: 13px;
+  padding: 3em 6em 3em 0;
+  line-height: 1.5em;
+  color: hsl(0, 0%, 41%);
+}
+
+.hero {
+  width: 100%;
+  height: 530px;
+}
+
+.learn {
+  background-color: hsl(0, 0%, 8%);
+  margin: 0;
+  color: #fff;
+  border: 1px solid hsl(0, 0%, 8%);
+  padding: 1em 2.5em;
+}
+
+.learn:hover {
+  font-weight: 700;
+  background-color: #fff;
+}
+
+.intro-icon {
+  padding-top: 8em;
+  display: flex;
+  gap: 1.2em;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.hero-mobile {
+  display: none;
+}
+
+.intro-a-taps {
+  display: block;
+}
+
+.intro-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro-close {
+  display: none;
+}
+
+.intro-menu {
+  display: none;
+}
+
+.intro-overlay {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .intro-icon {
+    padding-top: 5em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  body{
+    height: fit-content;
+    overflow-x: hidden;
+    
+  }
+
+  .overlay {
+    background-color: black;
+    width: 110%;
+    position: absolute;
+    height: 240vh;
+    translate: -100%;
+    opacity: 50%;
+  }
+
+  .background {
+    background-color: hsl(0, 0%, 41%);
+  }
+
+  .logo {
+    width: 150%;
+  }
+
+  .intro-menu {
+    display: block;
+    height: 40px;
+    padding-top: 1em;
+  }
+
+  .intro-overlay {
+    background-color: #fff;
+    translate: 92% -3%;
+    width: 50%;
+    position: absolute;
+    height: 240vh;
+    
+  }
+
+  .active {
+   display: block
+  }
+
+  .unactive {
+    display: none;
+    
+  }
+
+  .mobile-nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .intro-close {
+    display: block;
+    padding: 2em;
+  }
+
+  .intro-arrow {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .intro-feature:hover .mobile-dropdown-feature {
+    display: block;
+  }
+
+  .intro-feature:hover .feature {
+    transform: rotate(180deg);
+  }
+
+  .mobile-dropdown-feature,
+  .mobile-dropdown-company {
+    display: none;
+  }
+
+  .intro-company:hover .mobile-dropdown-company {
+    display: block;
+  }
+
+  .intro-company:hover .company {
+    transform: rotate(180deg);
+  }
+
+  .dropdown-content-company {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    cursor: pointer;
+  }
+
+  .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+  }
+
+  .intro-a-taps {
+    display: none;
+  }
+
+  .intro-mobile-taps {
+    gap: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 1em;
+  }
+
+  .feature-a-taps {
+    padding: 1em;
+  }
+
+  .company-a-taps {
+    padding: 1em;
+  }
+
+  .intro-reg-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin: 0 auto;
+  }
+
+  .register {
+    padding: 1em 4em;
+  }
+
+  a {
+    font-size: 15px;
+  }
+
+  .intro-container {
+    flex-direction: column-reverse;
+    gap: 3em;
+    text-align: center;
+  }
+
+  .intro-content {
+    padding: 0;
+    width: 100%;
+  }
+
+  .intro-discription {
+    font-size: 25px;
+    padding: 0;
+    margin: 2em 3em;
+  }
+
+  .hero {
+    display: none;
+  }
+
+  .hero-mobile {
+    width: 100%;
+    display: block;
+  }
+
+  .intro-icon {
+    justify-content: center;
+  }
+
+  .learn {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .overlay {
+    height: 210vh;
+  }
+
+  .intro-overlay {
+    height: 210vh;
+  }
+
+  .logo {
+    width: 85%;
+  }
+
+  .intro-menu {
+    height: 35px;
+  }
+
+  .intro-headline {
+    font-size: 3em;
+  }
+
+  .intro-discription {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  main {
+    width: 100%;
+  }
+
+  .overlay {
+    height: 185vh;
+  }
+
+  .intro-overlay {
+    translate: 86% -4%;
+    height: 185vh;
+  }
+
+  .logo {
+    width: 80%;
+  }
+
+  .intro-menu {
+    height: 30px;
+  }
+
+  .intro-headline {
+    font-size: 2.5em;
+  }
+
+  .intro-discription {
+    font-size: 18px;
+  }
+
+  .learn {
+    font-size: 15px;
+  }
+
+  .icon {
+    width: 80%;
+  }
+
+  a {
+    font-size: 13px;
+  }
+
+  .register {
+    padding: 0.5em 2em;
+  }
+
+  .intro-close {
+    width: 42%;
+  }
+}
